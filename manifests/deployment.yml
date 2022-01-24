@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: manudevsundemo 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: manudevsundemo
+  template:
+    metadata:
+      labels:
+        app: manudevsundemo 
+    spec:
+      containers:
+        - name: manudevsundemo 
+          image: acrsundemoaks.azurecr.io/manudevsundemo
+          ports:
+          - containerPort: 80
