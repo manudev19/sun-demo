@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: manudevsundemo 
-          image: acrsundemoaks.azurecr.io/manudevsundemo
+          image: crsundemoaks.azurecr.io/manudevsundemo
           ports:
           - containerPort: 80
